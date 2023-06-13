@@ -3,7 +3,7 @@ let [seconds, minutes, hours] = [0,0,0];
 let displayTime = document.getElementById("displayTime");
 let timer = null;
 
-// function for stopwatch
+// function for stopwatch functionality
 function stopWatch(){
     seconds++;
     if(seconds == 60){
