@@ -4,7 +4,7 @@ let displayTime = document.getElementById("displayTime");
 let timer = null;
 
 // function for stopwatch functionality
-function stopWatch(){
+function stopWatch_functionality(){
     seconds++;
     if(seconds == 60){
         seconds = 0;
@@ -22,13 +22,13 @@ function stopWatch(){
     displayTime.innerHTML = h + ":" + m + ":" + s;
 }
 
-// we need to execute stopwatch() function every second
+// we need to execute stopWatch_functionality() function every second
 
 function watchStart(){
     if(timer !== null){
         clearInterval(timer);
     }
-    timer = setInterval(stopWatch,1000);
+    timer = setInterval(stopWatch_functionality,1000);
 }
 
 function watchStop(){
